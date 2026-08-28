@@ -110,7 +110,8 @@ webmc [-f] <file> [more files ...]
 - Dimensions are padded to even numbers; pixel format keeps an alpha channel.
 - Accepts video files and GIFs; processes any number of inputs.
 - Skips a file if its `.webm` already exists — pass `-f` / `--force` to overwrite.
-- Prints the size before/after and a success/skipped/failed summary.
+- Prints the size before/after (KB/MB/GB), the elapsed conversion time, and a
+  success/skipped/failed summary.
 
 ```powershell
 webmc clip.mp4
@@ -128,7 +129,7 @@ webpc [-f] <file> [more files ...] [quality]
 - Routing by extension: `.gif` → `gif2webp`, `.heic` → `ffmpeg`, everything else
   → `cwebp`.
 - Skips a file if its `.webp` already exists — pass `-f` / `--force` to overwrite.
-- Prints sizes and a summary.
+- Prints sizes (KB/MB/GB), the elapsed conversion time, and a summary.
 
 ```powershell
 webpc photo.jpg

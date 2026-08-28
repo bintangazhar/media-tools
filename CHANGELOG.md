@@ -12,10 +12,12 @@ First public release.
 
 - **`webmc.bat`** — convert video/GIF to WebM (VP9, CRF 30, audio stripped,
   alpha-capable, even-dimension padding). Batch input, `-f`/`--force` to
-  overwrite, before/after size report and a summary.
+  overwrite, before/after size report (KB/MB/GB), per-file elapsed time
+  (`detik`, switching to `m s` past one minute), and a summary.
 - **`webpc.bat`** — convert images to WebP. Default quality 80, trailing number
   read as quality; `.gif` via `gif2webp`, `.heic` via `ffmpeg`, others via
-  `cwebp`. Batch input, `-f`/`--force`, summary.
+  `cwebp`. Batch input, `-f`/`--force`, before/after size report (KB/MB/GB),
+  per-file elapsed time, and a summary.
 - **`avifc.bat`** — convert an image to AVIF (SVT-AV1, `-preset 6`, CRF
   default 30).
 - **`mp4c.bat`** — convert video to web-safe MP4 (H.264 CRF 23 `-preset slow`,
@@ -46,6 +48,9 @@ First public release.
   extensions (`.mkv`, `.mov`, `.avi`, `.gif`; `.gif`, `.heic`, `.bmp`,
   `.tiff`).
 - Moved the `.reg` files into `context-menu/`.
+- `webpc.bat` now reports file sizes in KB/MB/GB (was integer KB only) and scans
+  all arguments for `-f`/`--force` instead of only the first, matching
+  `webmc.bat`.
 
 ### Fixed
 
