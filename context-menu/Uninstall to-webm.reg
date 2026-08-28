@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+; Removes the "Convert to WebM" right-click menu entries added by
+; "Install to-webm.reg".
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4\shell\ConvertToWebM]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv\shell\ConvertToWebM]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.mov\shell\ConvertToWebM]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.avi\shell\ConvertToWebM]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\shell\ConvertToWebM]

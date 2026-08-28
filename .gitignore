@@ -1,0 +1,32 @@
+# OS cruft
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Editor cruft
+*.swp
+*.tmp
+*~
+.vscode/
+.idea/
+
+# Test / sample media dropped in the repo while trying things out
+*.mp4
+*.mkv
+*.mov
+*.avi
+*.webm
+*.gif
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.avif
+*.heic
+*.bmp
+*.tiff
+*.svg
+*.min.svg
+!assets/**

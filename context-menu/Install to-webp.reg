@@ -1,0 +1,57 @@
+Windows Registry Editor Version 5.00
+
+; Adds a "Convert to WebP" entry to the right-click menu for common image
+; files. It calls webpc.bat on the selected file.
+;
+; BEFORE IMPORTING: edit every path below so it points to where you cloned
+; this repo. Use double backslashes (\\). If your path contains spaces, wrap
+; the script path like:  cmd /c \"\"C:\\My Tools\\webpc.bat\" \"%1\" & pause\"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.png\shell\ConvertToWebP]
+@="Convert to WebP"
+"Icon"="imageres.dll,-5302"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.png\shell\ConvertToWebP\command]
+@="cmd /c \"D:\\04_personal\\tools\\webpc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\ConvertToWebP]
+@="Convert to WebP"
+"Icon"="imageres.dll,-5302"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\ConvertToWebP\command]
+@="cmd /c \"D:\\04_personal\\tools\\webpc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\shell\ConvertToWebP]
+@="Convert to WebP"
+"Icon"="imageres.dll,-5302"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\shell\ConvertToWebP\command]
+@="cmd /c \"D:\\04_personal\\tools\\webpc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\shell\ConvertToWebP]
+@="Convert to WebP"
+"Icon"="imageres.dll,-5302"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\shell\ConvertToWebP\command]
+@="cmd /c \"D:\\04_personal\\tools\\webpc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.heic\shell\ConvertToWebP]
+@="Convert to WebP"
+"Icon"="imageres.dll,-5302"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.heic\shell\ConvertToWebP\command]
+@="cmd /c \"D:\\04_personal\\tools\\webpc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\shell\ConvertToWebP]
+@="Convert to WebP"
+"Icon"="imageres.dll,-5302"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\shell\ConvertToWebP\command]
+@="cmd /c \"D:\\04_personal\\tools\\webpc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\shell\ConvertToWebP]
+@="Convert to WebP"
+"Icon"="imageres.dll,-5302"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\shell\ConvertToWebP\command]
+@="cmd /c \"D:\\04_personal\\tools\\webpc.bat\" \"%1\" & pause"

@@ -1,0 +1,43 @@
+Windows Registry Editor Version 5.00
+
+; Adds a "Convert to WebM" entry to the right-click menu for common video
+; files and GIFs. It calls webmc.bat on the selected file.
+;
+; BEFORE IMPORTING: edit every path below so it points to where you cloned
+; this repo. Use double backslashes (\\). If your path contains spaces, wrap
+; the script path like:  cmd /c \"\"C:\\My Tools\\webmc.bat\" \"%1\" & pause\"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4\shell\ConvertToWebM]
+@="Convert to WebM"
+"Icon"="imageres.dll,-5301"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mp4\shell\ConvertToWebM\command]
+@="cmd /c \"D:\\04_personal\\tools\\webmc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv\shell\ConvertToWebM]
+@="Convert to WebM"
+"Icon"="imageres.dll,-5301"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mkv\shell\ConvertToWebM\command]
+@="cmd /c \"D:\\04_personal\\tools\\webmc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mov\shell\ConvertToWebM]
+@="Convert to WebM"
+"Icon"="imageres.dll,-5301"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.mov\shell\ConvertToWebM\command]
+@="cmd /c \"D:\\04_personal\\tools\\webmc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avi\shell\ConvertToWebM]
+@="Convert to WebM"
+"Icon"="imageres.dll,-5301"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.avi\shell\ConvertToWebM\command]
+@="cmd /c \"D:\\04_personal\\tools\\webmc.bat\" \"%1\" & pause"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\shell\ConvertToWebM]
+@="Convert to WebM"
+"Icon"="imageres.dll,-5301"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\shell\ConvertToWebM\command]
+@="cmd /c \"D:\\04_personal\\tools\\webmc.bat\" \"%1\" & pause"

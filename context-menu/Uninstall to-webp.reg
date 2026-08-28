@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+; Removes the "Convert to WebP" right-click menu entries added by
+; "Install to-webp.reg".
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.png\shell\ConvertToWebP]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpg\shell\ConvertToWebP]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.jpeg\shell\ConvertToWebP]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.gif\shell\ConvertToWebP]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.heic\shell\ConvertToWebP]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.bmp\shell\ConvertToWebP]
+
+[-HKEY_CLASSES_ROOT\SystemFileAssociations\.tiff\shell\ConvertToWebP]
