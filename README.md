@@ -243,6 +243,8 @@ media-tools/
 └── LICENSE                     # The Unlicense (public domain)
 ```
 
+---
+
 ## License
 
 Released into the public domain under [The Unlicense](LICENSE). Use it however
